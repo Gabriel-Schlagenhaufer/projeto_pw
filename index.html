@@ -1,0 +1,56 @@
+<html>
+
+<head>
+  <title> projetao </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script defer src="js/funcoes.js"></script>
+</head>
+
+<body>
+
+
+  <main>
+    <div class="topo">
+      <div class="topo-esquerda">
+        <img src="logo1.png" width="80px" style="padding-right: 30px;">
+        <input type="text" name="busca-itens" id="busca-itens" class="busca-itens" placeholder="BUSCAR PRODUTO">
+        <button type="button" class="botao" onclick="adicionar()">
+          Adicionar itens
+        </button>
+      </div>
+      <div class="topo-direita">
+        <option>
+          <select> asd </select>
+        </option>
+      </div>
+    </div>
+    <div class="meio" id="meio">
+      <div class="itens" id="itens">
+        <!-- cada card vai ser adicionado aqui -->
+      </div>
+    </div>
+  </main>
+
+
+  <!-- template de cada card -->
+  <template id="template-item">
+    <div class="item">
+      <div class="item-conteudo">
+        <img src="logo1.png" height="150px" width="150px">
+        <p> Nome </p>
+        <p> Preço </p>
+      </div>
+      <div class="item-botao">
+        <button type="button" class="botao-carrinho">
+          Adicionar ao carrinho
+        </button>
+      </div>
+    </div>
+  </template>
+
+
+
+</body>
+
+</html>
