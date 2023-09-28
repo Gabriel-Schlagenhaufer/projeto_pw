@@ -5,6 +5,11 @@
   --acento: #d41870;
   --preto: #140f11;
   --cinza: #e6e6e6;
+  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-family: var(--fonte);
 }
 
 body {
@@ -112,7 +117,7 @@ body {
 
 .botao-carrinho {
   height: 35px;
-  width: 170px;
+  width: 180px;
   background-color: var(--primaria);
   border-radius: 10px;
   border: none;
