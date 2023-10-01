@@ -1,0 +1,76 @@
+:root {
+  --fundo: #e7e7e7;
+  --primaria: #f8519c;
+  --secundaria: #fdaed2;
+  --acento: #d41870;
+  --preto: #140f11;
+  --cinza: #e6e6e6;
+  --gradiente-topo-comeco: rgb(255, 0, 64);
+  --gradiente-topo-final: rgb(111, 0, 255);
+  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
+}
+
+* {
+  font-family: var(--fonte);
+}
+
+body {
+  margin: 0px;
+}
+
+.topo {
+  background-color: var(--primaria);
+  background: linear-gradient(45deg, var(--gradiente-topo-comeco), var(--gradiente-topo-final));
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topo-esquerda {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 20px;
+}
+
+.busca-itens {
+  font-size: large;
+  padding: 10px;
+  background-color: var(--cinza);
+  border: none;
+  border-radius: 15px;
+}
+
+.topo-direita {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.botao {
+  height: 50px;
+  width: 150px;
+  background-color: var(--secundaria);
+  border-radius: 10px;
+  border: solid var(--acento);
+  font-size: large;
+  color: var(--preto);
+  transition: 150ms;
+}
+
+.botao:hover {
+  background-color: var(--acento);
+  color: var(--fundo);
+  cursor: pointer;
+}
+
+.meio {
+  background-color: var(--fundo);
+  min-height: 90vh;
+}

@@ -1,0 +1,70 @@
+:root {
+  --fundo: #e7e7e7;
+  --primaria: #f8519c;
+  --secundaria: #fdaed2;
+  --acento: #d41870;
+  --preto: #140f11;
+  --cinza: #e6e6e6;
+  --gradiente-comeco: rgb(255, 185, 203);
+  --gradiente-final: rgb(215, 184, 255);
+}
+
+.itens {
+  width: 100%;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.item {
+  height: 300px;
+  width: 250px;
+  background: linear-gradient(45deg, var(--gradiente-comeco), var(--gradiente-final));
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 15px;
+}
+
+.item p {
+  color: black;
+}
+
+.item-conteudo {
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.item-botao {
+  height: 50px;
+  width: 250px;
+  transition: 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-carrinho {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  height: 35px;
+  width: 180px;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  transition: 150ms;
+}
+
+.botao-carrinho:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.botao-carrinho:active {
+  background: linear-gradient(45deg, var(--gradiente-topo-comeco), var(--gradiente-topo-final));
+}
