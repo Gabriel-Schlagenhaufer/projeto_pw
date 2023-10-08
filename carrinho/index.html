@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Projeto Final - Carrinho</title>
+    <title> Carrinho </title>
+    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
-    <link rel="stylesheet" href="../css/primario.css" />
+    <link rel="stylesheet" href="/css/primario.css"/>
+    <link rel="stylesheet" href="/css/carrinho.css">
   </head>
 
   <body>
@@ -28,42 +30,34 @@
             class="busca-itens"
             placeholder="Buscar Produto"
           />
-          <button type="button" class="botao" onclick="adicionar()">
-            Adicionar itens
-          </button>
         </div>
         <div class="topo-direita">
-          <a href="../index.html">
+          <a href="/index.html">
             <button type="button" class="botao"> Itens </button>
           </a>
-          <a href="index.html">
+          <a href="/carrinho/index.html">
             <button type="button" class="botao"> Carrinho </button>
           </a>
         </div>
       </div>
 
       <div class="meio" id="meio">
-        <div class="itens" id="itens">
-          <!-- cada card vai ser adicionado aqui -->
+        <div class="item-carrinho-container">
+          <div class="itens-carrinho">
+
+            <div class="item-carrinho">
+              <div class="item-carrinho-nome">
+                Nome
+              </div>
+              <div class="item-carrinho-preco">
+                Preco
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+
     </main>
-
-    <!-- template de cada card -->
-    <template id="template-item">
-      <div class="item">
-        <div class="item-conteudo">
-          <img src="img/logo1.png" height="150px" width="150px" />
-          <p>Nome</p>
-          <p>Preço</p>
-        </div>
-        <div class="item-botao">
-          <button type="button" class="botao-carrinho">
-            Adicionar ao carrinho
-          </button>
-        </div>
-      </div>
-    </template>
-
   </body>
 </html>

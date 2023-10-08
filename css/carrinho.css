@@ -1,0 +1,52 @@
+:root {
+  --fundo: #e7e7e7;
+  --primaria: #f8519c;
+  --secundaria: #fdaed2;
+  --acento: #d41870;
+  --preto: #140f11;
+  --cinza: #e6e6e6;
+  --gradiente-comeco: rgb(255, 185, 203);
+  --gradiente-final: rgb(215, 184, 255);
+  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
+}
+
+.item-carrinho-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.itens-carrinho {
+  width: 50vw;
+  background-color: white;
+}
+
+.item-carrinho {
+  min-width: 900px;
+  width: 100%;
+  height: 150px;
+  background-color: var(--secundaria);
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.item-carrinho-nome {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+.item-carrinho-preco {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+}

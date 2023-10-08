@@ -7,6 +7,7 @@
   --cinza: #e6e6e6;
   --gradiente-comeco: rgb(255, 185, 203);
   --gradiente-final: rgb(215, 184, 255);
+  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
 }
 
 .itens {
