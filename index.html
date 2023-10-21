@@ -7,12 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title> Projeto Final </title>
-    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
     <link rel="stylesheet" href="css/primario.css" />
     <link rel="stylesheet" href="css/itens.css">
-    <script defer src="js/funcoes.js"></script>
+    <script src="js/index.js" defer></script>
   </head>
 
   <body>
@@ -25,15 +25,13 @@
             style="padding-right: 30px"
           />
           <input
-            type="text"
+            type="search"
             name="busca-itens"
             id="busca-itens"
             class="busca-itens"
             placeholder="Buscar Produto"
+            oninput="buscar(event)"
           />
-          <button type="button" class="botao" onclick="adicionar()">
-            Adicionar itens
-          </button>
         </div>
         <div class="topo-direita">
           <a href="/index.html">
