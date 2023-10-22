@@ -7,22 +7,26 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title> Carrinho </title>
-    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
+    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
     <link rel="stylesheet" href="../css/primario.css"/>
     <link rel="stylesheet" href="../css/carrinho.css">
+    <script src="../js/carrinho.js" defer></script>
   </head>
 
   <body>
     <main>
       <div class="topo">
         <div class="topo-esquerda">
-          <img
-            src="../img/logo1.png"
-            width="80px"
-            style="padding-right: 30px"
-          />
+          <a href="#">
+            <img
+              src="../img/logo1.png"
+              width="80px"
+              style="padding-right: 30px"
+            />
+          </a>
           <input
             type="text"
             name="busca-itens"
@@ -32,10 +36,10 @@
           />
         </div>
         <div class="topo-direita">
-          <a href="/index.html">
+          <a href="/projeto_pw">
             <button type="button" class="botao"> Itens </button>
           </a>
-          <a href="/carrinho/index.html">
+          <a href="/projeto_pw/carrinho">
             <button type="button" class="botao"> Carrinho </button>
           </a>
         </div>
@@ -43,21 +47,26 @@
 
       <div class="meio" id="meio">
         <div class="item-carrinho-container">
-          <div class="itens-carrinho">
-
-            <div class="item-carrinho">
-              <div class="item-carrinho-nome">
-                Nome
-              </div>
-              <div class="item-carrinho-preco">
-                Preço
-              </div>
-            </div>
+          <div class="itens-carrinho" id="itens-carrinho">
 
           </div>
         </div>
       </div>
-
     </main>
+    <template id="template-produto">
+      <div class="item-carrinho">
+        <div class="item-carrinho-nome">
+          <span template-nome></span>
+        </div>
+        <div class="item-carrinho-preco">
+          <span template-preco></span>
+        </div>
+        <div class="item-carrinho-quantidade">
+          <button type="button" onclick="maismenos(event, 'mais')" class="fa-solid fa-plus"></button>
+          <span template-qtd></span>
+          <button type="button" onclick="maismenos(event, 'menos')" class="fa-solid fa-minus"></button>
+        </div>
+      </div>
+    </template>
   </body>
 </html>

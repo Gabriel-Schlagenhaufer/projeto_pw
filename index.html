@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
     <link rel="stylesheet" href="css/primario.css" />
     <link rel="stylesheet" href="css/itens.css">
+    <link rel="stylesheet" href="css/fontawesome-free-web/css/all.css">
     <script src="js/index.js" defer></script>
   </head>
 
@@ -19,11 +20,13 @@
     <main>
       <div class="topo">
         <div class="topo-esquerda">
-          <img
-            src="img/logo1.png"
-            width="80px"
-            style="padding-right: 30px"
-          />
+          <a href="/projeto_pw">
+            <img
+              src="img/logo1.png"
+              width="80px"
+              style="padding-right: 30px"
+            />
+          </a>
           <input
             type="search"
             name="busca-itens"
@@ -34,15 +37,15 @@
           />
         </div>
         <div class="topo-direita">
-          <a href="/index.html">
+          <a href="/projeto_pw">
             <button type="button" class="botao"> Itens </button>
           </a>
-          <a href="/carrinho/index.html">
+          <a href="/projeto_pw/carrinho">
             <button type="button" class="botao"> Carrinho </button>
           </a>
         </div>
       </div>
-
+ 
       <div class="meio" id="meio">
         <div class="itens" id="itens">
           <!-- cada card vai ser adicionado aqui -->
@@ -54,12 +57,12 @@
     <template id="template-item">
       <div class="item">
         <div class="item-conteudo">
-          <img src="img/logo1.png" height="150px" width="150px" />
-          <p>Nome</p>
-          <p>Preço</p>
+          <img data-template-item-img src="" height="150px" width="150px">
+          <p data-template-item-nome></p>
+          <p data-template-item-preco></p>
         </div>
         <div class="item-botao">
-          <button type="button" class="botao-carrinho">
+          <button type="button" class="botao-carrinho" onclick="adicionar(event)">
             Adicionar ao carrinho
           </button>
         </div>

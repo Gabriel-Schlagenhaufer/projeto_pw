@@ -10,6 +10,6 @@ create table produtos(
 
 create table carrinho(
 	id_prod int primary key,
-    qtd int not null,
+    qtd int not null default 1,
     foreign key(id_prod) references produtos(id)
     );

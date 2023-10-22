@@ -28,6 +28,10 @@
   margin: 15px;
 }
 
+.invisivel {
+  display: none;
+}
+
 .item p {
   color: black;
 }

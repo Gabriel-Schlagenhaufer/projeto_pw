@@ -1,0 +1,69 @@
+:root {
+    --fundo: #e7e7e7;
+    --primaria: #f8519c;
+    --secundaria: #fdaed2;
+    --acento: #d41870;
+    --preto: #140f11;
+    --cinza: #e6e6e6;
+    --gradiente-topo-comeco: rgb(255, 0, 64);
+    --gradiente-topo-final: rgb(111, 0, 255);
+    --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
+}
+
+.itens {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    background-color: var(--secundaria);
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.item * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-id {
+    height: 100%;
+    width: 10%;
+}
+
+.item-nome {
+    height: 100%;
+    width: 50%;
+}
+
+.item-preco {
+    height: 100%;
+    width: 20%;
+}
+
+.item-botao {
+    height: 100%;
+    width: 20%;
+}
+
+.item-botao button {
+    border: none;
+    font-size: large;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: var(--fundo);
+}
+
+.item-botao button:hover {
+    cursor: pointer;
+}
