@@ -1,25 +1,10 @@
-:root {
-  --fundo: #e7e7e7;
-  --primaria: #f8519c;
-  --secundaria: #fdaed2;
-  --acento: #d41870;
-  --preto: #140f11;
-  --cinza: #e6e6e6;
-  --gradiente-topo-comeco: rgb(255, 0, 64);
-  --gradiente-topo-final: rgb(111, 0, 255);
-  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
-}
-
-* {
-  font-family: var(--fonte);
-}
+@import url("bases.css");
 
 body {
   margin: 0px;
 }
 
 .topo {
-  background-color: var(--primaria);
   background: linear-gradient(45deg, var(--gradiente-topo-comeco), var(--gradiente-topo-final));
   height: 10vh;
   display: flex;
@@ -29,7 +14,7 @@ body {
 
 .topo-esquerda {
   height: 100%;
-  width: 50%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -39,18 +24,34 @@ body {
 .busca-itens {
   font-size: large;
   padding: 10px;
-  background-color: var(--cinza);
+  background-color: var(--fundo);
   border: none;
   border-radius: 15px;
 }
 
 .topo-direita {
   height: 100%;
-  width: 50%;
+  width: 20%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-around;
   padding-right: 20px;
+}
+
+.topo-direita div {
+  color: var(--cinza);
+  font-size: 1.5rem;
+  background-color: var(--acento);
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topo-direita div a:visited {
+  text-decoration: none;
 }
 
 .botao {

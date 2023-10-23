@@ -1,14 +1,4 @@
-:root {
-  --fundo: #e7e7e7;
-  --primaria: #f8519c;
-  --secundaria: #fdaed2;
-  --acento: #d41870;
-  --preto: #140f11;
-  --cinza: #e6e6e6;
-  --gradiente-comeco: rgb(255, 185, 203);
-  --gradiente-final: rgb(215, 184, 255);
-  --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
-}
+@import url("bases.css");
 
 .itens {
   width: 100%;
@@ -28,12 +18,19 @@
   margin: 15px;
 }
 
+.item img {
+  border-radius: 15px;
+}
+
 .invisivel {
   display: none;
 }
 
-.item p {
+.item span {
   color: black;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .item-conteudo {
@@ -41,7 +38,7 @@
   width: 250px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -55,7 +52,7 @@
 }
 
 .botao-carrinho {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(170, 111, 84, 0);
   color: black;
   height: 35px;
   width: 180px;
@@ -66,7 +63,7 @@
 }
 
 .botao-carrinho:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 94, 0, 0.253);
   cursor: pointer;
 }
 

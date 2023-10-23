@@ -1,14 +1,4 @@
-:root {
-    --fundo: #e7e7e7;
-    --primaria: #f8519c;
-    --secundaria: #fdaed2;
-    --acento: #d41870;
-    --preto: #140f11;
-    --cinza: #e6e6e6;
-    --gradiente-topo-comeco: rgb(255, 0, 64);
-    --gradiente-topo-final: rgb(111, 0, 255);
-    --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;
-}
+@import url("bases.css");
 
 .itens {
     height: 100%;

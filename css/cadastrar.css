@@ -1,3 +1,5 @@
+@import url("bases.css");
+
 .form-produto {
     display: flex;
     flex-direction: column;
