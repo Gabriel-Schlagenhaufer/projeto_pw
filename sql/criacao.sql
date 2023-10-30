@@ -13,3 +13,9 @@ create table carrinho(
     qtd int not null default 1,
     foreign key(id_prod) references produtos(id)
     );
+
+create table compras(
+    id int primary key auto_increment,
+    preco float not null,
+    metodo varchar(20) not null
+);

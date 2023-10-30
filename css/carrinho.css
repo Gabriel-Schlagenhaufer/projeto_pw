@@ -4,25 +4,26 @@
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .itens-carrinho {
-  width: 50vw;
+  width: 60vw;
   background-color: var(--fundo);
 }
 
 .item-carrinho {
-  min-width: 900px;
+  min-width: 400px;
   width: 100%;
-  height: 150px;
+  height: 100px;
   background-color: var(--secundaria);
   display: flex;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   overflow: hidden;
-  margin-bottom: 5px;
+  border: 5px var(--preto);
+  margin: 5px 0px 5px 0px;
+  border-radius: 15px;
 }
 
 .item-carrinho span:first-child {
@@ -53,15 +54,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
+}
+
+.item-carrinho-quantidade * {
+  margin: 8px;
 }
 
 .item-carrinho-quantidade button {
   border: none;
-  border-radius: 3px;
-  height: 30px;
-  width: 30px;
-  background-color: var(--cinza);
+  border-radius: 10px;
+  height: 38px;
+  width: 38px;
+  background-color: var(--fundo);
 }
 
 .item-carrinho-quantidade button:hover {
@@ -74,4 +79,48 @@
   height: 2.5rem;
   display: flex;
   align-items: center;
+}
+
+.finalizacao {
+  background-color: var(--secundaria);
+  width: 60vw;
+  height: 100px;
+  display: flex;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.finalizacao div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.finalizacao-preco {
+  width: 50%;
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.finalizacao-botao {
+  width: 50%;
+  height: 100%;
+}
+
+.finalizacao-botao button {
+  height: 50px;
+  width: 200px;
+  border: 3px solid var(--acento);
+  border-radius: 10px;
+  font-size: 1.25rem;
+  color: var(--preto);
+  background-color: var(--fundo);
+  transition: 150ms;
+}
+
+.finalizacao-botao button:hover {
+  cursor: pointer;
+  background-color: var(--acento);
+  color: var(--fundo);
 }

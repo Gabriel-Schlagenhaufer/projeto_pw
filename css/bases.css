@@ -1,12 +1,13 @@
 :root {
-  --fundo: #f7f7f7;
-  --primaria: #f8519c;
-  --secundaria: #ff9354;
-  --acento: #d41818;
+  --fundo: #f2f3f2;
+  --primaria: #ffb561;
+  --secundaria: #d4d6d1;
+  --acento: #645852;
+  --escuro: #2c1802;
   --preto: #140f11;
   --cinza: #e6e6e6;
-  --gradiente-topo-comeco: rgb(255, 182, 98);
-  --gradiente-topo-final: rgb(255, 138, 138);
+  --gradiente-topo-comeco: rgb(248, 205, 155);
+  --gradiente-topo-final: rgb(255, 184, 92);
   --gradiente-comeco: rgb(255, 232, 205);
   --gradiente-final: rgb(255, 203, 203);
   --fonte: "Inclusive Sans", Arial, Helvetica, sans-serif;

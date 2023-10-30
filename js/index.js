@@ -14,7 +14,7 @@ window.onload = async function () {
 
     templateItem.querySelector("[data-template-item-nome").innerText = produto.nome;
     templateItem.querySelector("[data-template-item-preco").innerText = "R$" + produto.preco;
-    templateItem.querySelector("[data-template-item-img").src = "img_produtos/" + produto.id + ".png";
+    templateItem.querySelector("[data-template-item-img").src = "img_temperos/" + produto.id + ".png";
     itens.appendChild(templateItem);
 
     return {nome: produto.nome, id: produto.id, card: templateItem};

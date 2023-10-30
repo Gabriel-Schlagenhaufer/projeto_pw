@@ -23,6 +23,8 @@ window.onload = async function () {
       preco: produto.preco,
       qtd: produto.qtd};
   });
+
+  precoTotal();
 }
 
 async function maismenos(event, mais) {
@@ -40,4 +42,22 @@ async function maismenos(event, mais) {
 
   const valor = await res.json();
   event.target.parentNode.querySelector("[template-qtd").innerText = valor[0].qtd;
+
+  itens.forEach(item => {
+    if (item.cod === cod) {
+      item.qtd = valor[0].qtd;
+    }
+  });
+
+  precoTotal();
+}
+
+function precoTotal() {
+  let preco_total = 0;
+
+  itens.forEach(elemento => {
+    preco_total += elemento.preco * elemento.qtd;
+  });
+
+  document.getElementById("preco-total").innerText = "Preço Total: R$" + preco_total.toFixed(2);
 }

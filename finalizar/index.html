@@ -7,10 +7,12 @@
       content="width=device-width, initial-scale=1.0"
     />
     <title> Carrinho </title>
-    <link rel="shortcut icon" href="/img/logo1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
-    <link rel="stylesheet" href="../css/primario.css" />
+    <link rel="stylesheet" href="../css/primario.css">
+    <link rel="stylesheet" href="../css/finalizar.css">
+    <script defer src="../js/finalizar.js"></script>
   </head>
 
   <body>
@@ -33,18 +35,51 @@
           />
         </div>
         <div class="topo-direita">
-          <a href="../../">
+          <a href="../">
             <button type="button" class="botao"> Itens </button>
           </a>
-          <a href="../">
+          <a href="../carrinho">
             <button type="button" class="botao"> Carrinho </button>
           </a>
         </div>
       </div>
 
       <div class="meio" id="meio">
+        <div class="itens" id="itens">
+          <!-- Cada item será add aqui -->
+        </div>
+        <div class="total">
+          <div class="total-preco">
+            <span id="total-preco-span">
+            </span>
+          </div>
+          <div class="escolha-opcao">
+            <select id="opcao-pagamento">
+              <option value="credito">Cartão de Crédito</option>
+              <option value="debito">Cartão de Débito</option>
+              <option value="pix">Pix</option>
+            </select>
+          </div>
+          <div class="botao-pagamento">
+            <button type="button" onclick="finalizar()">Finalizar Compra</button>
+          </div>
+        </div>
       </div>
 
     </main>
+
+    <template id="template-itens">
+      <div class="item">
+        <div class="item-nome">
+          <span nome>Nome</span>
+        </div>
+        <div class="item-preco">
+          <span preco>Preço</span>
+        </div>
+        <div class="item-quantidade">
+          <span qtd>Quantidade</span>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
