@@ -26,13 +26,6 @@
             style="padding-right: 30px"
             />
           </a>
-          <input
-            type="text"
-            name="busca-itens"
-            id="busca-itens"
-            class="busca-itens"
-            placeholder="Buscar Produto"
-          />
         </div>
         <div class="topo-direita">
           <a href="../">
@@ -45,14 +38,23 @@
       </div>
 
       <div class="meio" id="meio">
+        <span>Finalizar Compra</span>
+        <div class="item">
+          <div class="item-nome">
+            <span nome> Nome: </span>
+          </div>
+          <div class="item-preco">
+            <span preco> Preço: </span>
+          </div>
+          <div class="item-quantidade">
+            <span qtd> Quantidade: </span>
+          </div>
+        </div>
         <div class="itens" id="itens">
           <!-- Cada item será add aqui -->
         </div>
         <div class="total">
-          <div class="total-preco">
-            <span id="total-preco-span">
-            </span>
-          </div>
+          <span id="total-preco-span"></span>
           <div class="escolha-opcao">
             <select id="opcao-pagamento">
               <option value="credito">Cartão de Crédito</option>

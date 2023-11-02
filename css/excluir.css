@@ -16,7 +16,12 @@
     align-items: center;
     justify-content: space-around;
     font-size: large;
-    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.margem-topo {
+    margin-top: 10px;
 }
 
 .item * {

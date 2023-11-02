@@ -19,3 +19,9 @@ create table compras(
     preco float not null,
     metodo varchar(20) not null
 );
+
+delete from carrinho where id_prod <> 1;
+
+select * from carrinho;
+select * from compras;
+select * from produtos;

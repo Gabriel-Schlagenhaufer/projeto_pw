@@ -1,6 +1,62 @@
 @import url("bases.css");
 
-.form-produto {
+.form-inputs {
+    min-width: 40%;
+    min-height: 350px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cinza);
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.form-inputs form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.form-inputs * {
+    font-size: 1.25rem;
+    margin: 5px;
+}
+
+.form-inputs input[type=text] {
+    background-color: var(--fundo);
+    border: 2px var(--acento) solid;
+    border-radius: 5px;
+    height: 35px;
+    width: 500px;
+    padding-left: 10px;
+}
+
+.form-inputs input[type=file]::file-selector-button {
+    border-radius: 5px;
+    border: 2px var(--acento) solid;
+    color: var(--preto);
+    background-color: var(--fundo);
+    font-family: var(--fonte);
+    transition: 150ms;
+}
+
+.form-inputs input[type=file]::file-selector-button:hover {
+    background-color: var(--acento);
+    color: var(--fundo);
+    cursor: pointer;
+}
+
+.form-inputs button {
+    border-radius: 5px;
+    border: 2px var(--acento) solid;
+    color: var(--preto);
+    background-color: var(--fundo);
+    transition: 150ms;
+}
+
+.form-inputs button:hover {
+    border-radius: 5px;
+    border: 2px var(--acento) solid;
+    background-color: var(--acento);
+    color: var(--fundo);
+    cursor: pointer;
 }

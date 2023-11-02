@@ -15,7 +15,7 @@ async function carregar() {
     
     item.querySelector("[item-id").innerText = produto.id;
     item.querySelector("[item-nome").innerText = produto.nome;
-    item.querySelector("[item-preco").innerText = "R$ " + produto.preco;
+    item.querySelector("[item-preco").innerText = "R$" + produto.preco;
     itens.appendChild(item);
   });
 }
