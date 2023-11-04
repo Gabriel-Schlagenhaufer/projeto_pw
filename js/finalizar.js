@@ -48,4 +48,5 @@ async function finalizar() {
 
   console.log(res);
   alert(res);
+  window.location.href = "../";
 }

@@ -3,7 +3,11 @@
 $cod = $_POST["cod"];
 $opcao = $_POST["mais"];
 
-$con = mysqli_connect("localhost", "root", "!sqlintABC12", "temperos");
+$arqsenha = fopen("senha.txt","r");
+$senha = fgets($arqsenha);
+fclose($arqsenha);
+
+$con = mysqli_connect("localhost", "root", $senha, "temperos");
 
 if ($opcao === "mais") {
     $query = "update carrinho set qtd = qtd + 1 where id_prod = $cod";

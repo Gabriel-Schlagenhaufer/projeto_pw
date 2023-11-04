@@ -22,8 +22,9 @@
 .item {
     background-color: var(--secundaria);
     width: 50%;
-    height: 60px;
+    min-height: 60px;
     display: flex;
+    align-items: center;
     border-radius: 10px;
     margin-top: 5px;
 }
@@ -54,21 +55,25 @@
 .total {
     width: 50%;
     margin: 10px 0px;
-    height: 100px;
+    min-height: 100px;
     background-color: var(--secundaria);
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 1.25rem;
     border-radius: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 5px;
 }
 
 .total select {
     width: 200px;
     height: 40px;
     font-size: 1.25rem;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--fundo);
+    border: 2px solid var(--cinza);
 
 }
 

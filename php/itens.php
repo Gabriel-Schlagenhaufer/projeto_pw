@@ -1,6 +1,10 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "!sqlintABC12", "temperos");
+$arqsenha = fopen("senha.txt","r");
+$senha = fgets($arqsenha);
+fclose($arqsenha);
+
+$con = mysqli_connect("localhost", "root", $senha, "temperos");
 $query = "SELECT * FROM PRODUTOS";
 
 $resultado = mysqli_query($con, $query);

@@ -30,6 +30,10 @@
     padding-left: 10px;
 }
 
+.form-inputs input[type=text]:focus {
+    outline: solid var(--secundaria) 2px;
+}
+
 .form-inputs input[type=file]::file-selector-button {
     border-radius: 5px;
     border: 2px var(--acento) solid;

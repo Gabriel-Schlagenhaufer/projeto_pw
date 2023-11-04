@@ -9,26 +9,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
   <link rel="stylesheet" href="../css/primario.css" />
   <link rel="stylesheet" href="../css/cadastrar.css">
+  <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
   <script src="../js/cadastrar.js" defer></script>
+  <script src="../js/botaonav.js" defer></script>
 </head>
 
 <body>
   <main>
-    <div class="topo">
-      <div class="topo-esquerda">
+    <nav class="barra-navegacao">
+      <div class="logo">
         <a href="../">
-          <img src="../img/logo1.png" width="80px" style="padding-right: 30px" />
+          <img
+            src="../img/logo1.png"
+            class="img-logo"
+          />
         </a>
       </div>
-      <div class="topo-direita">
-        <a href="../">
-          <button type="button" class="botao"> Itens </button>
-        </a>
-        <a href="../carrinho">
-          <button type="button" class="botao"> Carrinho </button>
-        </a>
+      <div class="barras"><span class="fa-solid fa-bars"></span></div>
+      <div class="links">
+        <ul>
+          <li><a href="../">Itens</a></li>
+          <li><a href="../carrinho">Carrinho</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
     <div class="meio" id="meio">
       <div class="form-inputs">

@@ -28,14 +28,19 @@
 .item-carrinho {
   min-width: 400px;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   background-color: var(--secundaria);
   display: flex;
-  /* border-radius: 50px; */
+  align-items: center;
+  text-align: center;
   overflow: hidden;
   border: 5px var(--preto);
   margin: 5px 0px 5px 0px;
   border-radius: 15px;
+}
+
+.item-carrinho span {
+  text-align: center;
 }
 
 .item-carrinho span:first-child {
@@ -101,6 +106,8 @@
   margin-bottom: 30px;
   border-radius: 1 5px;
   overflow: hidden;
+  border-radius: 10px;
+  flex-wrap: wrap;
 }
 
 .finalizacao div {

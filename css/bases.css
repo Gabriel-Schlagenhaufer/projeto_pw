@@ -1,5 +1,6 @@
 :root {
-  --fundo: #f2f3f2;
+  --fundo: #f2f2f2;
+  --fundo-opaco: rgba(242, 242, 242, 0.3);
   --primaria: #ffb561;
   --secundaria: #d4d6d1;
   --acento: #645852;
@@ -14,5 +15,6 @@
 }
 
 * {
+  box-sizing: border-box;
   font-family: var(--fonte);
 }

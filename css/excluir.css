@@ -2,7 +2,7 @@
 
 .itens {
     height: 100%;
-    width: 100%;
+    width: 60vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,11 +10,13 @@
 
 .item {
     background-color: var(--secundaria);
-    height: 50px;
-    width: 1000px;
+    min-height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
     font-size: large;
     margin: 5px;
     border-radius: 5px;
@@ -22,6 +24,7 @@
 
 .margem-topo {
     margin-top: 10px;
+    width: 60vw;
 }
 
 .item * {

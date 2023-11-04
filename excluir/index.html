@@ -14,29 +14,29 @@
     <link rel="stylesheet" href="../css/excluir.css">
     <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
     <script src="../js/excluir.js" defer></script>
+    <script src="../js/botaonav.js" defer></script>
   </head>
 
   <body>
     <main>
-      <div class="topo">
-        <div class="topo-esquerda">
+      <nav class="barra-navegacao">
+        <div class="logo">
           <a href="../">
             <img
               src="../img/logo1.png"
-              width="80px"
-              style="padding-right: 30px"
+              class="img-logo"
             />
           </a>
         </div>
-        <div class="topo-direita">
-          <a href="../">
-            <button type="button" class="botao"> Itens </button>
-          </a>
-          <a href="../carrinho">
-            <button type="button" class="botao"> Carrinho </button>
-          </a>
+        <div class="barras"><span class="fa-solid fa-bars"></span></div>
+        <div class="links">
+          <ul>
+            <li><a href="../">Itens</a></li>
+            <li><a href="../carrinho">Carrinho</a></li>
+          </ul>
         </div>
-      </div>
+      </nav>
+
       <div class="meio" id="meio">
         <div class="item margem-topo">
           <div class="item-id" item-id>

@@ -2,7 +2,11 @@
 
 $id = $_POST["id"];
 
-$con = mysqli_connect("localhost", "root", "!sqlintABC12", "temperos");
+$arqsenha = fopen("senha.txt","r");
+$senha = fgets($arqsenha);
+fclose($arqsenha);
+
+$con = mysqli_connect("localhost", "root", $senha, "temperos");
 
 $jatem = $con->query("select * from carrinho where id_prod = $id");
 

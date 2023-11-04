@@ -9,7 +9,11 @@ if ($arquivo["type"] != "image/png") {
     exit;
 }
   
-$con = mysqli_connect("localhost", "root", "!sqlintABC12", "temperos");
+$arqsenha = fopen("senha.txt","r");
+$senha = fgets($arqsenha);
+fclose($arqsenha);
+
+$con = mysqli_connect("localhost", "root", $senha, "temperos");
 $query = "insert into produtos values (null, '$nome', $preco)";
 
 if ($con->query($query) === TRUE) {
