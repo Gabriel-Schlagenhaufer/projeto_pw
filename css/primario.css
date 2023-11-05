@@ -33,6 +33,7 @@ body {
 
 .img-logo {
   height: 100%;
+  filter: drop-shadow(-5px 3px #333);
 }
 
 .links ul {
