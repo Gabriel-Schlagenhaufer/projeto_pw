@@ -23,7 +23,7 @@ if ($con->query($query) === TRUE) {
     exit;
 }
 
-$caminho = "../img_produtos/".$last_id.".png";
+$caminho = "../img_temperos/".$last_id.".png";
 move_uploaded_file($arquivo["tmp_name"], $caminho);
 
 echo json_encode("Produto cadastrado com sucesso!");
