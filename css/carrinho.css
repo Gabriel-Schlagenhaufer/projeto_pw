@@ -131,7 +131,7 @@
   height: 50px;
   width: 200px;
   border: 3px solid var(--acento);
-  border-radius: 10px;
+  border-radius: 999px;
   font-size: 1.25rem;
   color: var(--preto);
   background-color: var(--fundo);
@@ -142,4 +142,5 @@
   cursor: pointer;
   background-color: var(--acento);
   color: var(--fundo);
+  box-shadow: 0px 2px 5px var(--escuro);
 }

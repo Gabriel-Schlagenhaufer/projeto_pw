@@ -50,17 +50,17 @@
 }
 
 .form-inputs button {
-    border-radius: 5px;
+    border-radius: 999px;
     border: 2px var(--acento) solid;
     color: var(--preto);
     background-color: var(--fundo);
     transition: 150ms;
+    height: 40px;
 }
 
 .form-inputs button:hover {
-    border-radius: 5px;
-    border: 2px var(--acento) solid;
     background-color: var(--acento);
     color: var(--fundo);
     cursor: pointer;
+    box-shadow: 0px 2px 5px var(--escuro);
 }

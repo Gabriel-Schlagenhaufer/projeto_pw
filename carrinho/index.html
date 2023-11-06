@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title> Carrinho </title>
-    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
-    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
-    <link rel="stylesheet" href="../css/primario.css"/>
-    <link rel="stylesheet" href="../css/carrinho.css">
+    <title>SpAce - Carrinho</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inclusive+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../css/primario.css" />
+    <link rel="stylesheet" href="../css/carrinho.css" />
     <script src="../js/carrinho.js" defer></script>
     <script src="../js/botaonav.js" defer></script>
   </head>
@@ -22,13 +31,12 @@
       <nav class="barra-navegacao">
         <div class="logo">
           <a href="../">
-            <img
-              src="../img/logo1.png"
-              class="img-logo"
-            />
+            <img src="../img/logo1.png" class="img-logo" />
           </a>
         </div>
-        <div class="barras"><span class="fa-solid fa-bars"></span></div>
+        <div class="barras">
+          <span class="fa-solid fa-bars"></span>
+        </div>
         <div class="links">
           <ul>
             <li><a href="../">Itens</a></li>
@@ -44,11 +52,11 @@
             <div class="item-carrinho">
               <div class="item-carrinho-nome">
                 <span template-nome>Nome do produto: </span>
-             </div>
-             <div class="item-carrinho-preco">
+              </div>
+              <div class="item-carrinho-preco">
                 <span template-preco>Preço Unitário:</span>
               </div>
-             <div class="item-carrinho-quantidade">
+              <div class="item-carrinho-quantidade">
                 <span template-qtd>Quantidade:</span>
               </div>
             </div>
@@ -56,8 +64,7 @@
         </div>
         <div class="finalizacao">
           <div class="finalizacao-preco">
-            <span id="preco-total">
-            </span>
+            <span id="preco-total"> </span>
           </div>
           <div class="finalizacao-botao">
             <a href="../finalizar">
@@ -65,9 +72,7 @@
             </a>
           </div>
         </div>
-
       </div>
-      
     </main>
 
     <template id="template-produto">
@@ -79,12 +84,19 @@
           <span template-preco></span>
         </div>
         <div class="item-carrinho-quantidade">
-          <button type="button" onclick="maismenos(event, 'mais')" class="fa-solid fa-plus"></button>
+          <button
+            type="button"
+            onclick="maismenos(event, 'mais')"
+            class="fa-solid fa-plus"
+          ></button>
           <span template-qtd></span>
-          <button type="button" onclick="maismenos(event, 'menos')" class="fa-solid fa-minus"></button>
+          <button
+            type="button"
+            onclick="maismenos(event, 'menos')"
+            class="fa-solid fa-minus"
+          ></button>
         </div>
       </div>
     </template>
-
   </body>
 </html>

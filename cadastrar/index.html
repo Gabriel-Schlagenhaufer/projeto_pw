@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>SpAce - Cadastrar Produto</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inclusive+Sans"
+    />
+    <link rel="stylesheet" href="../css/primario.css" />
+    <link rel="stylesheet" href="../css/cadastrar.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-web/css/all.css"
+    />
+    <script src="../js/cadastrar.js" defer></script>
+    <script src="../js/botaonav.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Cadastrar Produto </title>
-  <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
-  <link rel="stylesheet" href="../css/primario.css" />
-  <link rel="stylesheet" href="../css/cadastrar.css">
-  <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
-  <script src="../js/cadastrar.js" defer></script>
-  <script src="../js/botaonav.js" defer></script>
-</head>
+  <body>
+    <main>
+      <nav class="barra-navegacao">
+        <div class="logo">
+          <a href="../">
+            <img src="../img/logo1.png" class="img-logo" />
+          </a>
+        </div>
+        <div class="barras">
+          <span class="fa-solid fa-bars"></span>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="../">Itens</a></li>
+            <li><a href="../carrinho">Carrinho</a></li>
+          </ul>
+        </div>
+      </nav>
 
-<body>
-  <main>
-    <nav class="barra-navegacao">
-      <div class="logo">
-        <a href="../">
-          <img
-            src="../img/logo1.png"
-            class="img-logo"
-          />
-        </a>
+      <div class="meio" id="meio">
+        <div class="form-inputs">
+          <form id="form-cadastrar">
+            <label for="nome">Nome do Produto:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome"
+            />
+            <label for="preco">Preço do Produto:</label>
+            <input
+              type="text"
+              id="preco"
+              name="preco"
+              placeholder="Preço"
+            />
+            <label for="arquivo">Imagem do Produto:</label>
+            <input type="file" id="arquivo" />
+            <button type="button" onclick="cadastrar()">
+              Cadastrar
+            </button>
+          </form>
+        </div>
       </div>
-      <div class="barras"><span class="fa-solid fa-bars"></span></div>
-      <div class="links">
-        <ul>
-          <li><a href="../">Itens</a></li>
-          <li><a href="../carrinho">Carrinho</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="meio" id="meio">
-      <div class="form-inputs">
-        <form id="form-cadastrar">
-          <label for="nome">Nome do Produto:</label>
-          <input type="text" id="nome" name="nome" placeholder="Nome">
-          <label for="preco">Preço do Produto:</label>
-          <input type="text" id="preco" name="preco" placeholder="Preço">
-          <label for="arquivo">Imagem do Produto:</label>
-          <input type="file" id="arquivo">
-          <button type="button" onclick="cadastrar()">Cadastrar</button>
-        </form>
-      </div>
-
-    </div>
-
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>

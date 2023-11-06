@@ -10,7 +10,7 @@ $preco = $_POST["preco"];
 $metodo = $_POST["metodo"];
 
 $query1 = "insert into compras values (null, $preco, '$metodo')";
-$query2 = "delete from carrinho where id_prod <> 1";
+$query2 = "truncate table carrinho";
 
 mysqli_query($con, $query1);
 mysqli_query($con, $query2);

@@ -12,7 +12,7 @@ $con = mysqli_connect("localhost", "root", $senha, "temperos");
 if ($opcao === "mais") {
     $query = "update carrinho set qtd = qtd + 1 where id_prod = $cod";
 } else {
-    $query = "update carrinho set qtd = qtd - 1 where id_prod = $cod";
+    $query = "update carrinho set qtd = qtd - 1 where id_prod = $cod and qtd > 0";
 }
 
 mysqli_query($con, $query);

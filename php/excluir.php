@@ -14,6 +14,8 @@ $query2 = "delete from produtos where id = $id";
 mysqli_query($con, $query1);
 mysqli_query($con, $query2);
 
+unlink("../img_temperos/$id.png");
+
 echo json_encode("Produto excluído com sucesso!");
 
 ?>

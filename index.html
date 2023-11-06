@@ -6,13 +6,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title> Projeto Final </title>
-    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
+    <title>SpAce - Home</title>
+    <link
+      rel="shortcut icon"
+      href="img/logo1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inclusive+Sans"
+    />
     <link rel="stylesheet" href="css/primario.css" />
-    <link rel="stylesheet" href="css/itens.css">
-    <link rel="stylesheet" href="css/fontawesome-free-web/css/all.css">
+    <link rel="stylesheet" href="css/itens.css" />
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-web/css/all.css"
+    />
     <script src="js/index.js" defer></script>
     <script src="js/botaonav.js" defer></script>
   </head>
@@ -22,10 +31,7 @@
       <nav class="barra-navegacao">
         <div class="logo">
           <a href="">
-            <img
-              src="img/logo1.png"
-              class="img-logo"
-            />
+            <img src="img/logo1.png" class="img-logo" />
           </a>
           <input
             type="search"
@@ -36,7 +42,9 @@
             oninput="buscar(event)"
           />
         </div>
-        <div class="barras"><span class="fa-solid fa-bars"></span></div>
+        <div class="barras">
+          <span class="fa-solid fa-bars"></span>
+        </div>
         <div class="links">
           <ul>
             <li><a href="">Itens</a></li>
@@ -44,7 +52,7 @@
           </ul>
         </div>
       </nav>
- 
+
       <div class="meio" id="meio">
         <div class="itens" id="itens">
           <!-- cada card vai ser adicionado aqui -->
@@ -56,17 +64,26 @@
     <template id="template-item">
       <div class="item">
         <div class="item-conteudo">
-          <img data-template-item-img src="" height="150px" width="150px" style="background-color: white;">
+          <img
+            data-template-item-img
+            src=""
+            height="150px"
+            width="150px"
+            style="background-color: white"
+          />
           <span data-template-item-nome></span>
           <span data-template-item-preco></span>
         </div>
         <div class="item-botao">
-          <button type="button" class="botao-carrinho" onclick="adicionar(event)">
+          <button
+            type="button"
+            class="botao-carrinho"
+            onclick="adicionar(event)"
+          >
             Adicionar ao carrinho
           </button>
         </div>
       </div>
     </template>
-
   </body>
 </html>

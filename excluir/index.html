@@ -6,13 +6,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title> Excluir Produto </title>
-    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
+    <title>SpAce - Excluir Produto</title>
+    <link
+      rel="shortcut icon"
+      href="../img/logo1.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inclusive+Sans"
+    />
     <link rel="stylesheet" href="../css/primario.css" />
-    <link rel="stylesheet" href="../css/excluir.css">
-    <link rel="stylesheet" href="../css/fontawesome-free-web/css/all.css">
+    <link rel="stylesheet" href="../css/excluir.css" />
+    <link
+      rel="stylesheet"
+      href="../css/fontawesome-free-web/css/all.css"
+    />
     <script src="../js/excluir.js" defer></script>
     <script src="../js/botaonav.js" defer></script>
   </head>
@@ -22,13 +31,12 @@
       <nav class="barra-navegacao">
         <div class="logo">
           <a href="../">
-            <img
-              src="../img/logo1.png"
-              class="img-logo"
-            />
+            <img src="../img/logo1.png" class="img-logo" />
           </a>
         </div>
-        <div class="barras"><span class="fa-solid fa-bars"></span></div>
+        <div class="barras">
+          <span class="fa-solid fa-bars"></span>
+        </div>
         <div class="links">
           <ul>
             <li><a href="../">Itens</a></li>
@@ -39,18 +47,10 @@
 
       <div class="meio" id="meio">
         <div class="item margem-topo">
-          <div class="item-id" item-id>
-            ID:
-          </div>
-          <div class="item-nome" item-nome>
-            NOME:
-          </div>
-          <div class="item-preco" item-preco>
-            PREÇO:
-          </div>
-          <div class="item-botao">
-            EXCLUIR:
-          </div>
+          <div class="item-id" item-id>ID:</div>
+          <div class="item-nome" item-nome>NOME:</div>
+          <div class="item-preco" item-preco>PREÇO:</div>
+          <div class="item-botao">EXCLUIR:</div>
         </div>
         <div class="itens" id="itens">
           <!-- itens serão add aqui -->
@@ -58,24 +58,19 @@
       </div>
     </main>
     <template id="template-item">
-
       <div class="item">
-        <div class="item-id" item-id>
-        </div>
-        <div class="item-nome" item-nome>
-        </div>
-        <div class="item-preco" item-preco>
-        </div>
+        <div class="item-id" item-id></div>
+        <div class="item-nome" item-nome></div>
+        <div class="item-preco" item-preco></div>
         <div class="item-botao">
           <button
             type="button"
             onclick="excluir(event)"
             class="fa-solid fa-trash"
-            style="color: black;">
-          </button>
+            style="color: black"
+          ></button>
         </div>
       </div>
-      
     </template>
   </body>
 </html>
