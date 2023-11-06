@@ -23,6 +23,10 @@ if ($con->query($query) === TRUE) {
     exit;
 }
 
+if (!file_exists("../img_temperos")) {
+    mkdir("../img_temperos");
+}
+
 $caminho = "../img_temperos/".$last_id.".png";
 move_uploaded_file($arquivo["tmp_name"], $caminho);
 
