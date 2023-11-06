@@ -19,3 +19,6 @@ create table if not exists compras(
     preco float not null,
     metodo varchar(20) not null
 );
+
+delete from carrinho where id_prod <> 0;
+delete from produtos where id <> 0;
